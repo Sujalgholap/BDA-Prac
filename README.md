@@ -39,7 +39,7 @@ def count_ones():
 
 
 stream = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
-```
+
 
 
 
@@ -47,3 +47,36 @@ for bit in stream[::-1]:
     add_bit(bit)
 
 print("Approximate count of 1s in the last 10 bits:", count_ones())
+```
+
+```
+#data visualization in r
+
+install.packages("ggplot2")
+
+# Load the ggplot2 package
+library(ggplot2)
+
+# Create a sample dataset
+data <- data.frame(
+  Category = c("A", "B", "C", "D", "E"),
+  Values = c(23, 45, 12, 67, 34)
+)
+
+# Create a bar plot
+ggplot(data, aes(x = Category, y = Values, fill = Category)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Bar Plot of Categories", x = "Category", y = "Values")
+
+# Creating a time series dataset
+time_data <- data.frame(
+  Time = seq(1, 10),
+  Measurement = c(5, 7, 8, 10, 15, 20, 25, 30, 28, 35)
+)
+
+# Line plot
+ggplot(time_data, aes(x = Time, y = Measurement)) +
+  geom_line(color = "blue") +
+  geom_point() +
+  labs(title = "Time Series Data", x = "Time", y = "Measurement")
+```
