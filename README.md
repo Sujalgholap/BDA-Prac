@@ -81,3 +81,23 @@ ggplot(time_data, aes(x = Time, y = Measurement)) +
   geom_point() +
   labs(title = "Time Series Data", x = "Time", y = "Measurement")
 ```
+#HIVE 
+```
+show databases;
+show tables;
+create database test;
+use test;
+create table test.emp
+(
+sno int,
+usr_name string,
+city string)
+ROW FORMAT delimited fields terminated by ',' LINES TERMINATED BY '\n' STORED AS TEXTFILE;
+load data local inpath  '/home/test/usr_data.txt' into table emp;
+load data inpath '/usr_data.txt' into table emp;
+insert into emp (sno, usr_name,city) values (1,'g', 'chennai');
+desc emp;
+desc extended emp;
+show functions;
+select * from emp where city in ('chennai');
+```
