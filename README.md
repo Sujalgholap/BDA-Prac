@@ -81,7 +81,7 @@ ggplot(time_data, aes(x = Time, y = Measurement)) +
   geom_point() +
   labs(title = "Time Series Data", x = "Time", y = "Measurement")
 ```
-#HIVE 
+# HIVE 
 ```
 show databases;
 show tables;
@@ -101,7 +101,7 @@ desc extended emp;
 show functions;
 select * from emp where city in ('chennai');
 ```
-#HBase
+# HBase
 ```
 
 create 'mytable', { NAME => 'cf1', VERSIONS => 3 }
