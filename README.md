@@ -1,7 +1,7 @@
 # BDA-Prac
 This is just a demo repository to study Git and Github
 
-
+# DGIM Algorithm
 ```
 buckets = []
 current_time = 0
@@ -49,6 +49,7 @@ for bit in stream[::-1]:
 print("Approximate count of 1s in the last 10 bits:", count_ones())
 ```
 
+# R Visualization
 ```
 #data visualization in r
 
