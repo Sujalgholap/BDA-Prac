@@ -101,3 +101,12 @@ desc extended emp;
 show functions;
 select * from emp where city in ('chennai');
 ```
+#HBase
+```
+
+create 'mytable', { NAME => 'cf1', VERSIONS => 3 }
+put 'mytable', 'row1', 'cf1:col1', 'value1'
+get 'mytable', 'row1'
+scan 'mytable'
+delete 'mytable', 'row1', 'cf1:col1'
+```
